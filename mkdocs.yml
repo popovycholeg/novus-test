@@ -1,1 +1,7 @@
-site_name: My Docs
+site_name: E-monitor
+nav:
+    - Вступ: index.md
+    - Показники: parameters.md
+    - About: about.md
+theme: readthedocs
+lang: ru

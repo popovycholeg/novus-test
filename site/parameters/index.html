@@ -64,11 +64,25 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_4">Налаштування параметру</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_5">Зміна назви</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_6">Зміна меж</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_7">Перетворення</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_8">Графік</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_9">Відображення</a>
+    </li>
+        </ul>
+    </li>
     </ul>
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../analytics/">Аналітика</a>
                     </li>
                 </ul>
       </div>
@@ -155,6 +169,57 @@
 Сторінка перезавантажиться параметр перейде в стан <code>Очікування відповіді</code> і коли команда відпрацює змінить свій стан.</p>
 <p>Натиснувши на <img alt="dropdownbtn" src="/img/dropdownbtn.png" />, відкриється меню параметру керування. Вибравши пункт <code>Перегляд подій</code>
 можна подивитися логи параметру, коли і ким він був установлений.</p>
+<h2 id="_4">Налаштування параметру</h2>
+<p><img alt="Налаштування параметру" src="/img/paramSettings.png" /></p>
+<p>Вверху можна побачити кнопки, що відкривають вікна для налаштувань параметру,<br />
+внизу таблицю з усіма даними параметру</p>
+<h3 id="_5"><code>Зміна назви</code></h3>
+<p><img alt="changeParamName" src="/img/changeParamName.png" /></p>
+<ul>
+<li><code>Назва</code> - відображувана назва параметру</li>
+<li><code>Одиниці вимірювання</code> - одиниці вимірювання, показуються біля значення параметру</li>
+<li><code>Опис</code> - опис параметру, поле для пояснень і нотаток</li>
+</ul>
+<h3 id="_6"><code>Зміна меж</code></h3>
+<p><img alt="changeParamName" src="/img/changeLimit.png" /></p>
+<ul>
+<li>
+<p><code>min_red</code> та <code>max_red</code> мінімальна та максимальна червоні зони відповідно, виставляйте сюди ті значення, що призведуть до пошкодження обладнання чи є не припустимими, при виході за червону зону, ввмикається сигналізація, та розсилаються сповіщення в Telegram, Viber та введені раніше електронні пошти.</p>
+</li>
+<li>
+<p><code>min_yellow</code> та <code>max_yellow</code> мінімальна та максимальна жовті зони відповідно, виставляйте сюди ті значення, що є не бажаними для системи і потребують реагування, щоб не перейти в червону зону, розсилаються сповіщення в Telegram, Viber та введені раніше електронні пошти.</p>
+</li>
+<li>
+<p><code>max_red_daily_average</code> - Червона лінія на графіках для значень 1в добу або рідше, при цьому <code>max_red</code> на графіках не відображається.</p>
+</li>
+</ul>
+<h3 id="_7"><code>Перетворення</code></h3>
+<p><img alt="transform" src="/img/transform.png" /></p>
+<p>Перед відображенням параметру з ним можна провести певні маніпуляції, як на картинці вище, помноживши на 0.1 ми переводимо наш параметр в інші одиниці вимірювання.</p>
+<ul>
+<li><code>До перетворення</code> - Відображає значення параметру до застосування перетворення</li>
+<li><code>Після перетворення</code> - Результат після перетворення, оновлюється в реальному часі</li>
+</ul>
+<h3 id="_8"><code>Графік</code></h3>
+<p><img alt="paramGraphsSettings" src="/img/paramGraphsSettings.png" /></p>
+<ul>
+<li><code>Шкала мінімум</code> та <code>Шкала максимум</code> - мінімальне і максимальне значення на гравіфіку для даного параметру по вісі <code>Y</code>.</li>
+<li><code>Колір лінії</code> - колір лінії, що відображатиметься на графіку.</li>
+</ul>
+<p><strong>Зауважте:</strong> налаштування вище застосовуються, лише коли на площину графіку додана єдина лінія, коли їх декілька, налаштування втрачають силу</p>
+<h3 id="_9"><code>Відображення</code></h3>
+<p><img alt="appearence" src="/img/appearence.png" /></p>
+<ul>
+<li><code>Кількість цифр після коми</code> - відображувана кількість цифр після коми, за правилами заокруглення</li>
+<li><code>Віджет</code> - відображуваний віджет на карточці параметру внизу</li>
+<li>
+<p><code>Значення в текст</code> - замісь цифрового значення відображається словесне за правилами, як на картинці
+<img alt="Значення в текст" src="/img/valueText.png" /></p>
+</li>
+<li>
+<p><code>Показувати на карті</code> - Відображення параметру в розділі <a href="/1">мапа</a></p>
+</li>
+</ul>
               
             </div>
           </div>
@@ -162,7 +227,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../analytics/" class="btn btn-neutral float-right" title="Аналітика">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href=".." class="btn btn-neutral" title="Вступ"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -194,7 +259,7 @@
         <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../about/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../analytics/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

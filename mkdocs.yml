@@ -3,5 +3,6 @@ nav:
     - Вступ: index.md
     - Показники: parameters.md
     - Аналітика: analytics.md
+    - Карта: map.md
 theme: readthedocs
 lang: ru

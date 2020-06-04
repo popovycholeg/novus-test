@@ -4,5 +4,6 @@ nav:
     - Показники: parameters.md
     - Аналітика: analytics.md
     - Карта: map.md
+    - Налаштування: settings.md
 theme: readthedocs
 lang: ru

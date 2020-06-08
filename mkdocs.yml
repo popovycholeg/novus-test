@@ -5,5 +5,6 @@ nav:
     - Аналітика: analytics.md
     - Карта: map.md
     - Налаштування: settings.md
+    - Керування: control.md
 theme: readthedocs
 lang: ru

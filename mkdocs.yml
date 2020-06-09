@@ -6,5 +6,6 @@ nav:
     - Карта: map.md
     - Налаштування: settings.md
     - Керування: control.md
+    - Адміністрування: administration.md
 theme: readthedocs
 lang: ru

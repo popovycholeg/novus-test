@@ -7,5 +7,6 @@ nav:
     - Налаштування: settings.md
     - Керування: control.md
     - Адміністрування: administration.md
+    - Користувач: user.md
 theme: readthedocs
 lang: ru
